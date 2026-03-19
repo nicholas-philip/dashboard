@@ -3,13 +3,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey:            "AIzaSyDsIJ8LGjwTSo-gevd6-7mt-zYcdOH6AB8",
-  authDomain:        "terrasense-dbe12.firebaseapp.com",
-  projectId:         "terrasense-dbe12",
-  storageBucket:     "terrasense-dbe12.firebasestorage.app",
-  messagingSenderId: "162130572395",
-  appId:             "1:162130572395:web:4d1e47b68084ae35a2ad2e",
-  measurementId:     "G-W3NZCVKQHX",
+  apiKey:            process.env.REACT_APP_FIREBASE_API_KEY,
+  authDomain:        process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+  projectId:         process.env.REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket:     process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId:             process.env.REACT_APP_FIREBASE_APP_ID,
+  measurementId:     process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
