@@ -1,0 +1,26 @@
+# Dependency directories
+node_modules/
+
+# Secrets & Keys
+serviceAccountKey.json
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build outputs
+build/
+dist/
+.next/
+
+# Firebase
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+
+# IDE / OS Files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
